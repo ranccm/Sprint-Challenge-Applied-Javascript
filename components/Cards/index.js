@@ -15,7 +15,7 @@
 //     <span>By {authors name}</span>
 //   </div>
 // </div>
-//
+//    
 // Create a card for each of the articles and add the card to the DOM.
 
 let cardEntry = document.querySelector('.cards-container')

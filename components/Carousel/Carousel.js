@@ -17,3 +17,33 @@
     <div class="right-button"> > </div>
   </div>
 */
+const caroEntry = document.querySelector('.carousel.container');
+
+function createCarousel(){
+  const
+    carousel = document.createElement('div');
+    lButton = document.createElement('div');
+    mountains = document.createElement('div');  
+    computer = document.createElement('div');
+    trees = document.createElement('div');
+    turn = document.createElement('div');
+    rButton = document.createElement('div');
+
+    carousel.classList.add('carousel');
+    lButton.classList.add('left-button');
+    rButton.classList.add('right-button');
+
+    mountains.innerHTML = "<img src=./assets/carousel/mountains.jpeg>";
+    computer.innerHTML = "<img src=./assets/carousel/computer.jpeg>";
+    trees.innerHTML = "<img src=./assets/carousel/trees.jpeg>";
+    turn.innerHTML = "<img src=./assets/carousel/turntable.jpeg>";
+
+    carousel.appendChild(mountains);
+    carousel.appendChild(computer);
+    carousel.appendChild(trees);
+    carousel.appendChild(turn);
+
+    return carousel;
+}
+
+caroEntry.appendChild(createCarousel());
